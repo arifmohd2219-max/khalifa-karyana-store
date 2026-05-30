@@ -97,7 +97,23 @@ margin-bottom:15px;
 font-size:22px;
 margin-bottom:10px;
 }
+.call-btn,
+.wa-btn{
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:10px;
+    font-weight:bold;
+}
 
+.call-btn{
+    background:white;
+    color:#0a7c2f;
+}
+
+.wa-btn{
+    background:#25D366;
+    color:white;
+}
 /* CATEGORIES */
 
 .categories{
@@ -298,4 +314,13 @@ font-size:16px;
 font-size:20px;
 }
 
+}
+.call-btn{
+    background:white;
+    color:#0a7c2f;
+}
+
+.wa-btn{
+    background:#25D366;
+    color:white;
 }
