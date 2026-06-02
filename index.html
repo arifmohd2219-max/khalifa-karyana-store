@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<a
+href="https://wa.me/919622615467"
+target="_blank"
+class="floating-whatsapp">
+
+    <img
+    src="images/whatsapp.jpg"
+    alt="WhatsApp"
+    class="whatsapp-icon">
+
+</a><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -44,15 +54,6 @@ onkeyup="searchProducts()">
 
 <div class="hero-overlay">
 
-<h2>KHALIFA KARYANA STORE</h2>
-
-<p>
-Village UPAR Gunthal,
-Tehsil Surankote,
-District Poonch,
-J&K - 185121
-</p>
-
 <p>Open Daily • 8 AM - 9 PM</p>
 </p>
 
@@ -76,7 +77,12 @@ J&K - 185121
 <h2>Shop Categories</h2>
 
 <div class="category-grid">
+<div class="category-card"
+onclick="showCategory('chakki')">
 
+🌾 Atta & Dal Chakki Service
+
+</div>
 <div class="category-card" onclick="showCategory('grocery')">
 🛒 Grocery Essentials
 </div>
@@ -128,7 +134,130 @@ Click any category above to view products.
 </div>
 
 </section>
+<section class="popular-products">
 
+    <h2>🔥 Popular Products</h2>
+
+    <div class="popular-grid">
+
+        <div class="popular-card">
+            <img src="images/atta.jpg" alt="Atta">
+            <h3>Atta</h3>
+        </div>
+
+        <div class="popular-card">
+            <img src="images/chawal.jpg" alt="Chawal">
+            <h3>Chawal</h3>
+        </div>
+
+        <div class="popular-card">
+            <img src="images/sugar.jpg" alt="Sugar">
+            <h3>Sugar</h3>
+        </div>
+
+        <div class="popular-card">
+            <img src="images/masoor-dal.jpg" alt="Masoor Dal">
+            <h3>Masoor Dal</h3>
+        </div>
+
+        <div class="popular-card">
+            <img src="images/pepsi.jpg" alt="Pepsi">
+            <h3>Pepsi</h3>
+        </div>
+
+        <div class="popular-card">
+            <img src="images/sting.jpg" alt="Sting">
+            <h3>Sting</h3>
+        </div>
+
+        <div class="popular-card">
+            <img src="images/surf.jpg" alt="Surf">
+            <h3>Surf</h3>
+        </div>
+
+        <div class="popular-card">
+            <img src="images/chicken.jpg" alt="Chicken">
+            <h3>Chicken / Meat</h3>
+        </div>
+
+        <div class="popular-card">
+            <img src="images/ice-cream.jpg" alt="Ice Cream">
+            <h3>Ice Cream</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="reviews-section">
+
+    <h2>⭐ Customer Reviews</h2>
+
+    <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>
+        Good quality products and fair prices.
+        </p>
+    </div>
+    <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>
+        Best grocery store in our area.
+        </p>
+    </div>
+    <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>
+        Friendly service and fresh products.
+        </p>
+    </div>
+<section class="feedback-section">
+
+    <h2>⭐ Customer Feedback</h2>
+
+    <p>Share your experience with us</p>
+
+    <select id="rating">
+        <option value="⭐">1 Star</option>
+        <option value="⭐⭐">2 Stars</option>
+        <option value="⭐⭐⭐">3 Stars</option>
+        <option value="⭐⭐⭐⭐">4 Stars</option>
+        <option value="⭐⭐⭐⭐⭐">5 Stars</option>
+    </select>
+
+    <input
+    type="text"
+    id="customerName"
+    placeholder="Your Name">
+
+    <textarea
+    id="feedbackText"
+    placeholder="Write your feedback here">
+    </textarea>
+
+    <button onclick="sendFeedback()">
+        Submit Feedback
+    </button>
+
+</section>
+</section>
+<section class="map-section">
+
+    <h2>📍 Find Us on Google Maps</h2>
+
+    <p>
+        Visit our store location directly using Google Maps.
+    </p>
+
+    <a
+    href="https://maps.app.goo.gl/PYZpS1pw8CGYgduPA"
+    target="_blank"
+    class="map-btn">
+
+    📍 Get Directions
+
+    </a>
+
+</section>
 <section class="owner-section">
 
 <h2>Store Owner</h2>

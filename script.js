@@ -1,37 +1,102 @@
 const productImages = {
 
+    // Grocery
     "Atta":"atta.jpg",
     "Chawal":"chawal.jpg",
     "Maida":"maida.jpg",
     "Suji":"suji.jpg",
-
     "Masoor Dal":"masoor-dal.jpg",
     "Moong Dal":"moong-dal.jpg",
     "Chana Dal":"chana-dal.jpg",
     "Rajma":"rajma.jpg",
     "Kabuli Chana":"kabuli-chana.jpg",
-
     "Mustard Oil":"mustard-oil.jpg",
     "Refined Oil":"refined-oil.jpg",
-
     "Sugar":"sugar.jpg",
-
     "Green Tea":"green-tea.jpg",
     "Lipton Tea":"lipton-tea.jpg",
-
     "Potato":"potato.jpg",
     "Onion":"onion.jpg",
 
+    // Spices
     "Haldi":"haldi.jpg",
     "Mirch Powder":"mirch-powder.jpg",
     "Dhania Powder":"dhania-powder.jpg",
     "Garam Masala":"garam-masala.jpg",
     "Jeera":"jeera.jpg",
+    "Ajwain":"ajwain.jpg",
     "Elaichi":"elaichi.jpg",
     "Laung":"laung.jpg",
     "Kali Mirch":"kali-mirch.jpg",
     "Biryani Masala":"biryani-masala.jpg",
-    "Meat Masala":"meat-masala.jpg"
+    "Meat Masala":"meat-masala.jpg",
+
+    // Snacks
+    "Glucose Biscuit":"glucose-biscuit.jpg",
+    "Cream Biscuit":"cream-biscuit.jpg",
+    "Bakri Biscuit":"bakri-biscuit.jpg",
+    "Rusk":"rusk.jpg",
+    "Chips":"chips.jpg",
+    "Kurkure":"kurkure.jpg",
+    "Namkeen":"namkeen.jpg",
+    "Popcorn":"popcorn.jpg",
+    "Peanuts":"peanuts.jpg",
+    "Chocolate":"chocolate.jpg",
+    "Candies":"candies.jpg",
+    "Toffees":"toffees.jpg",
+    "Chewing Gum":"chewing-gum.jpg",
+
+    // Dry Fruits
+    "Almonds":"almonds.jpg",
+    "Cashews":"cashews.jpg",
+    "Raisins":"raisins.jpg",
+
+    // Cold Drinks
+    "Coca-Cola":"coca-cola.jpg",
+    "Pepsi":"pepsi.jpg",
+    "Sprite":"sprite.jpg",
+    "Fanta":"fanta.jpg",
+    "Mountain Dew":"mountain-dew.jpg",
+    "Limca":"limca.jpg",
+    "Sting":"sting.jpg",
+    "Slice":"slice.jpg",
+    "Kawi":"kawi.jpg",
+    "Pack Juices":"pack-juice.jpg",
+
+    "Ice Cream Small":"ice-cream.jpg",
+    "Ice Cream Medium":"ice-cream.jpg",
+    "Ice Cream Large":"ice-cream.jpg",
+
+    // Personal Care
+    "Soap":"soap.jpg",
+    "Shampoo":"shampoo.jpg",
+    "Hair Oil":"hair-oil.jpg",
+    "Face Wash":"face-wash.jpg",
+    "Toothpaste":"toothpaste.jpg",
+    "Toothbrush":"toothbrush.jpg",
+    "Deodorant":"deodorant.jpg",
+    "Shaving Cream":"shaving-cream.jpg",
+    "Razor":"razor.jpg",
+    "Hair Gel":"hair-gel.jpg",
+    "Sanitary Pads":"sanitary-pads.jpg",
+    "Diapers":"diapers.jpg",
+    "Baby Wipes":"baby-wipes.jpg",
+    "Baby Powder":"baby-powder.jpg",
+    "Baby Soap":"baby-soap.jpg",
+    "Baby Food":"baby-food.jpg",
+    "Surf":"surf.jpg",
+    "Detergent Powder":"detergent-powder.jpg",
+    "Dishwash Bar":"dishwash-bar.jpg",
+    "Dishwash Liquid":"dishwash-liquid.jpg",
+    "Floor Cleaner":"floor-cleaner.jpg",
+    "Phenyl":"phenyl.jpg",
+
+    // Agriculture
+    "Crop Fertilizer (Khad)":"khad.jpg",
+    "Animal Feed":"animal-feed.jpg",
+
+    // Special
+    "Chicken / Meat":"chicken.jpg"
 };
 function createCard(name, price = "📞 Contact Store for Price") {
 
@@ -53,8 +118,25 @@ function createCard(name, price = "📞 Contact Store for Price") {
 
             <p class="in-stock">
                 ✅ In Stock
-            </p>
+            </p><a
+href="https://wa.me/919622615467?text=${encodeURIComponent(`Assalamualaikum,
 
+Maine aapki website KHALIFA KARYANA STORE visit ki. Website ka experience achha raha.
+
+Mujhe ${name} ke baare me maloomat chahiye.
+
+Kya ${name} store me available hai?
+Aur iska current price kya hai?
+
+Agar is product ki koi dusri variety ya pack size bhi available ho to uski details bhi bata dijiye.
+
+Shukriya.`)}"
+target="_blank"
+class="whatsapp-product-btn">
+
+📲 Click for Details on WhatsApp
+
+</a>
         </div>
     `;
 }
@@ -201,8 +283,77 @@ function showCategory(category) {
         title.innerHTML = "⭐ Special / Seasonal Items";
 
         html += createCard("Chicken / Meat");
-    }
+    }else if(category === "chakki"){
 
+    title.innerHTML =
+    "🌾 Atta & Dal Chakki Service";
+
+    html = `
+
+    <div class="chakki-section">
+
+        <video
+        class="chakki-video"
+        autoplay
+        muted
+        loop
+        controls
+        playsinline>
+
+            <source
+            src="videos/chakki.mp4"
+            type="video/mp4">
+
+        </video>
+
+        <h2>
+        Fresh Grinding Available
+        </h2>
+
+        <div class="chakki-price">
+
+            <h3>
+            💰 Wheat (Gehu) Grinding
+            </h3>
+
+            <p>
+            ₹4 per Kg
+            </p>
+
+            <h3>
+            💰 Dal Grinding
+            </h3>
+
+            <p>
+            ₹3 per Kg
+            </p>
+
+        </div>
+
+        <p>
+        📞 Contact: 9622615467
+        </p>
+
+        <a
+        href="https://wa.me/919622615467?text=${encodeURIComponent(`Assalamualaikum,
+
+Maine aapki website par Atta & Dal Chakki Service dekhi.
+
+Mujhe chakki service ke baare me maloomat chahiye.
+
+Gehu pisai aur Dal pisai ki timing aur details bata dijiye.
+
+Shukriya.`)}"
+        target="_blank"
+        class="whatsapp-product-btn">
+
+        📲 Click for Details on WhatsApp
+
+        </a>
+
+    </div>
+    `;
+}
     box.innerHTML = html;
 }
 
@@ -225,4 +376,33 @@ function searchProducts(){
             cards[i].style.display = "none";
         }
     }
+}
+function sendFeedback(){
+
+    let rating =
+    document.getElementById("rating").value;
+
+    let name =
+    document.getElementById("customerName").value;
+
+    let feedback =
+    document.getElementById("feedbackText").value;
+
+    let message =
+
+`Assalamualaikum,
+
+Customer Feedback
+
+Name: ${name}
+
+Rating: ${rating}
+
+Feedback:
+${feedback}`;
+
+    window.open(
+    `https://wa.me/919622615467?text=${encodeURIComponent(message)}`,
+    "_blank"
+    );
 }

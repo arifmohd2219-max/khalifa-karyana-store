@@ -323,4 +323,263 @@ font-size:20px;
 .wa-btn{
     background:#25D366;
     color:white;
+}.map-section{
+
+    background:white;
+
+    margin:25px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+}
+
+.map-btn{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#0a7c2f;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.map-btn:hover{
+
+    background:#086326;
+}
+.whatsapp-product-btn{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.whatsapp-product-btn:hover{
+
+    opacity:0.9;
+}.chakki-section{
+
+text-align:center;
+
+width:100%;
+}.chakki-video{
+
+width:100%;
+
+max-width:1000px;
+
+border-radius:15px;
+
+margin-bottom:20px;
+}/* POPULAR PRODUCTS */
+
+.popular-products{
+
+    background:white;
+    margin:25px;
+    padding:25px;
+    border-radius:15px;
+}
+
+.popular-products h2{
+
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.popular-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+}
+
+.popular-card{
+
+    text-align:center;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    background:white;
+
+    transition:0.3s;
+}
+
+.popular-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.popular-card img{
+
+    width:120px;
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+}
+
+.popular-card h3{
+
+    font-size:18px;
+}
+/* REVIEWS */
+
+.reviews-section{
+
+background:white;
+
+margin:25px;
+
+padding:25px;
+
+border-radius:15px;
+}
+
+.reviews-section h2{
+
+text-align:center;
+
+margin-bottom:20px;
+}
+
+.review-card{
+
+background:#f5f5f5;
+
+padding:15px;
+
+margin-bottom:15px;
+
+border-radius:10px;
+}
+.floating-whatsapp{
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,0.3);
+
+    z-index:9999;
+
+    transition:0.3s;
+}
+
+.floating-whatsapp:hover{
+
+    transform:scale(1.1);
+}
+
+.whatsapp-icon{
+
+    width:35px;
+
+    height:35px;
+}
+.feedback-section{
+
+    background:white;
+
+    margin:25px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+}
+
+.feedback-section input,
+.feedback-section textarea,
+.feedback-section select{
+
+    width:90%;
+
+    max-width:500px;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+}
+
+.feedback-section textarea{
+
+    height:120px;
+
+    resize:none;
+}
+
+.feedback-section button{
+
+    background:#25D366;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
 }
